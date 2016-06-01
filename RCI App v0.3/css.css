@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {font-family: montserrat-bold;src: url('font/Montserrat-Bold.WOFF');}
+@font-face {font-family: montserrat-regular;src: url('font/Montserrat-Regular.WOFF');}
+
+/*generales*/
+*{box-sizing:border-box;border:0;padding:0;margin:0;color:#333;font-family:montserrat,montserrat-bold,sans-serif;text-decoration:none;}
+body,html{height:100%;background-color:#fff;}
+a{color:white;}
+p{color:white;position:relative;top:45%;}
+h1{font-size:2em;color:rgb(255,255,255);text-shadow:0 0 10px #333;text-align:center;position:absolute;top:40%;width:100%;text-transform:uppercase;letter-spacing:2px;}
+h1 span{display:block;color:rgb(255,255,255);}
+
+/*header*/
+.body-normal{height:85%;background-image:url('imgs/fondo_app.jpg');background-size:cover;background-repeat:no-repeat;background-position:left center;}
+.header-white{background-image:none;}
+#logo{position:fixed;top:0;width:100%;box-shadow:0 0 5px #333;height:20%;background-color:rgba(0,0,0,1);text-align:center;z-index:9999;}
+
+/*colores*/
+.verde{background-color:#97bb40;}
+.magenta{background-color:#d20062;}
+.plum{background-color:#950075;}
+.cyan{background-color:#41d7eb;}
+.blue{background-color:#5ca3d9;}
+.mauve{background-color:#7f43e1;}
+.purple{background-color:#d5a00b9;}
+.turquesa{background-color:#00c3af;}
+.teal{background-color:#23788c;}
+.green{background-color:#cdd746;}
+.olive{background-color:#aea32f;}
+.orange{background-color:#ff7a00;}
+
+.txt-verde{color:#97bb40;}
+.txt-magenta{color:#d20062;}
+.txt-magenta-light{color: #FF5891;}
+
+.txt-plum{color:#950075;}
+.txt-cyan{color:#41d7eb;}
+.txt-blue{color:#5ca3d9;}
+.txt-mauve{color:#7f43e1;}
+.txt-purple{color:#d5a00b9;}
+.txt-turquesa{color:#00c3af;}
+.txt-teal{color:#23788c;}
+.txt-green{color:#cdd746;}
+.txt-olive{color:#aea32f;}
+.txt-orange{color:#ff7a00;}
+
+/*menu*/
+#menu{position:fixed;bottom:0;height:15%;width:100%;}
+.btn_home{width:20%;float:left;text-align:center;background-color:black;height:100%;}
+
+/*dias*/
+.dia1{background-image:url('imgs/dias-01.png');}
+.dia2{background-image:url('imgs/dias-02.png');}
+.dia3{background-image:url('imgs/dias-03.png');}
+.dia4{background-image:url('imgs/dias-04.png');}
+.dia5{background-image:url('imgs/dias-05.png');}
+.dia6{background-image:url('imgs/dias-06.png');}
+.dia7{background-image:url('imgs/dias-07.png');}
+.dia8{background-image:url('imgs/dias-08.png');}
+.dia1,.dia3,.dia6,.dia8{background-color:orange;}
+.dia2,.dia4,.dia5,.dia7{background-color:#FF7900;}
+
+#textodia #fotodia1{background-image:url('imgs/fotodia1.jpg');}
+#textodia #fotodia2{background-image:url('imgs/fotodia2.jpg');}
+#textodia #fotodia3{background-image:url('imgs/fotodia3.jpg');}
+#textodia #fotodia4{background-image:url('imgs/fotodia4.jpg');}
+#textodia #fotodia5{background-image:url('imgs/fotodia5.jpg');}
+#textodia #fotodia6{background-image:url('imgs/fotodia6.jpg');}
+#textodia #fotodia7{background-image:url('imgs/fotodia7.jpg');}
+#textodia #fotodia8{background-image:url('imgs/fotodia8.jpg');}
+
+#textodia #pass{margin-top:30px;}
+#textodia #pass-ant,#pass-dps{display:inline-block;width:auto;background:#97bb40;}
+#textodia #pass-ant{float:left;text-align:left;}
+#textodia #pass-dps{float:right;text-align:right;}
+#textodia #pass-ant a,#textodia #pass-dps a{text-decoration:none;color:white;font-size:.9em;display:block;width:100%;height:100%;padding:15px;}
+
+@media all and (orientation:portrait) {
+    /* Styles for Portrait screen */
+
+/*header*/
+#logo a{display:block;width:100%;height:100%;background-image:url('imgs/logo_rci_350x100.png');background-size:70%;background-position:center center;background-repeat:no-repeat;padding:5%;}
+h1 span::after{content:"";display:block;width:10%;border-bottom:3px solid orange;height:1px;position:relative;top:15px;margin:0 auto;box-shadow:0 0 3px #666;}
+
+/*menu*/
+#programa.btn_home a{display:block;width:100%;height:100%;background-image:url('imgs/programa.png');background-repeat:no-repeat;background-position:center center;background-size:60%;}
+#vuelos.btn_home a{display:block;width:100%;height:100%;background-image:url('imgs/vuelos.png');background-repeat:no-repeat;background-position:center center;background-size:60%;}
+#hoteles.btn_home a{display:block;width:100%;height:100%;background-image:url('imgs/hoteles.png');background-repeat:no-repeat;background-position:center center;background-size:60%;}
+#info.btn_home a{display:block;width:100%;height:100%;background-image:url('imgs/info.png');background-repeat:no-repeat;background-position:center center;background-size:60%;}
+#contacto.btn_home a{display:block;width:100%;height:100%;background-image:url('imgs/contacto.png');background-repeat:no-repeat;background-position:center center;background-size:60%;}
+
+/*dias*/
+#dias{height:20%;position:absolute;bottom:60%;width:100%;z-index:1;box-shadow:0 0 5px #333;}
+#dias a{float:left;width:25%;height:50%;display:block;background-repeat:no-repeat;background-position:center center;background-size:50%;}
+
+#textodia {padding:45% 7% 45% 7%;}
+#textodia h2{font-size:1.3em;margin-bottom:15px;}
+#textodia h3{font-size:1.1em;margin-bottom:10px;}
+#textodia h4{color:#333;font-weight:bold;margin-bottom:10px;}
+#textodia p{color:#333;font-face:montserrat,montserrat-regular,sans-serif;font-size:.9em;margin-bottom:10px;}
+#textodia a{text-decoration:none;color:#aea32f;}
+#textodia .fotodia{width:100%;height:250px;margin-top:20px;background-repeat:no-repeat;background-position:center center;background-size:cover;}
+}
+
+@media all and (orientation:landscape) {
+ 
+/*header*/
+#logo a{display:block;width:100%;height:100%;background-image:url('imgs/logo_rci_350x100.png');background-size:30%;background-position:center center;background-repeat:no-repeat;padding:5%;}
+h1 span::after{content:"";display:block;width:5%;border-bottom:3px solid orange;height:1px;position:relative;top:15px;margin:0 auto;box-shadow:0 0 3px #666;}
+
+/*menu*/
+#programa.btn_home a{display:block;width:100%;height:100%;background-image:url('imgs/programa.png');background-repeat:no-repeat;background-position:center center;background-size:40%;}
+#vuelos.btn_home a{display:block;width:100%;height:100%;background-image:url('imgs/vuelos.png');background-repeat:no-repeat;background-position:center center;background-size:40%;}
+#hoteles.btn_home a{display:block;width:100%;height:100%;background-image:url('imgs/hoteles.png');background-repeat:no-repeat;background-position:center center;background-size:40%;}
+#info.btn_home a{display:block;width:100%;height:100%;background-image:url('imgs/info.png');background-repeat:no-repeat;background-position:center center;background-size:40%;}
+#contacto.btn_home a{display:block;width:100%;height:100%;background-image:url('imgs/contacto.png');background-repeat:no-repeat;background-position:center center;background-size:40%;}
+
+/*dias*/
+#dias{height:20%;position:absolute;bottom:60%;width:100%;z-index:1;box-shadow:0 0 5px #333;}
+#dias a{float:left;width:12.5%;height:50%;display:block;background-repeat:no-repeat;background-position:center center;background-size:40%;}
+#dias a:nth-child(odd){background-color:orange;}
+#dias a:nth-child(even){background-color:#FF7900;}
+#textodia {padding:20% 3% 20% 3%;}
+#textodia h2{font-size:1.3em;margin-bottom:15px;}
+#textodia h3{font-size:1.1em;margin-bottom:10px;}
+#textodia h4{color:#333;font-weight:bold;margin-bottom:10px;}
+#textodia p{color:#333;font-face:montserrat,montserrat-regular,sans-serif;font-size:.9em;margin-bottom:10px;}
+#textodia a{text-decoration:none;color:#aea32f;}
+#textodia .fotodia{width:100%;height:450px;margin-top:20px;background-repeat:no-repeat;background-position:center center;background-size:cover;}
+ 
+.vuelosext{width:50%;float:left;}
+.vuelosint{width:50%;float:right;}
+}
